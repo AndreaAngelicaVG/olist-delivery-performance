@@ -7,3 +7,7 @@ Olist is a Brazilian e-commerce platform that connects merchants with marketplac
 This project analyzes approximately 100,000 orders placed between 2016 and 2018 using SQL and a public, anonymized dataset from Kaggle.
 
 The main objective is to evaluate Olist's on-time delivery performance and identify opportunities to improve delivery reliability.
+
+## Business Problem
+
+Reliable delivery service can help build customer trust. Analyzing Olist's delivery performance can help identify potential operational inefficiencies. This analysis focuses on historical delivery performance to identify opportunities to improve logistics operations.
