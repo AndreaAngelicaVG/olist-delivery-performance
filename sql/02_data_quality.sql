@@ -31,3 +31,16 @@ SELECT
 FROM 
   `olist-ecommerce-1.olist_full_dataset.olist_orders_dataset`
 WHERE order_purchase_timestamp > order_delivered_customer_date;
+
+
+-- Validation 4: Status Consistency
+-- Objective: Analyze if there's orders with a delivery date assigned but a status different than "Delivered"
+
+SELECT
+order_id,
+order_status,
+order_delivered_customer_date
+FROM 
+ `olist-ecommerce-1.olist_full_dataset.olist_orders_dataset`
+WHERE order_status != 'delivered'
+AND order_delivered_customer_date IS NOT NULL;
