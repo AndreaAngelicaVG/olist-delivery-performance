@@ -9,7 +9,7 @@ FROM
 
 
 -- Validation 2: Missing Delivery Dates
--- Objective: Identify if there's missing delivery dates for orders with status "Delivered"
+-- Objective: Identify orders with missing delivery dates but status "Delivered"
 
 SELECT
  order_id,
@@ -34,7 +34,7 @@ WHERE order_purchase_timestamp > order_delivered_customer_date;
 
 
 -- Validation 4: Status Consistency
--- Objective: Analyze if there's orders with a delivery date assigned but a status different than "Delivered"
+-- Objective: Identify orders with recorded delivery dates but a status other than delivered
 
 SELECT
 order_id,
