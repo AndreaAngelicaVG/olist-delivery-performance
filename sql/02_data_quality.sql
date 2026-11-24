@@ -18,7 +18,7 @@ SELECT
 FROM 
  `olist-ecommerce-1.olist_full_dataset.olist_orders_dataset`
 WHERE order_status = 'delivered'
-AND order_delivered_customer_date IS NULL;
+  AND order_delivered_customer_date IS NULL;
 
 
 -- Validation 3: Chronological Consistency
@@ -43,4 +43,4 @@ order_delivered_customer_date
 FROM 
  `olist-ecommerce-1.olist_full_dataset.olist_orders_dataset`
 WHERE order_status != 'delivered'
-AND order_delivered_customer_date IS NOT NULL;
+  AND order_delivered_customer_date IS NOT NULL;
