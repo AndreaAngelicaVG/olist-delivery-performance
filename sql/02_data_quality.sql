@@ -22,7 +22,7 @@ AND order_delivered_customer_date IS NULL;
 
 
 -- Validation 3: Chronological Consistency
--- Objective: Confirm if the dates have chronological consistency between the statuses "Created" and "Delivered"
+-- Objective: Confirm the chronological consistency between the date when the purchase was made and the delivery date
 
 SELECT
  order_id,
@@ -30,4 +30,4 @@ SELECT
  order_delivered_customer_date
 FROM 
   `olist-ecommerce-1.olist_full_dataset.olist_orders_dataset`
-WHERE order_purchase_timestamp > order_delivered_customer_date
+WHERE order_purchase_timestamp > order_delivered_customer_date;
